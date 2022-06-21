@@ -1,0 +1,70 @@
+.apps{
+  .container-big{
+    background-color: $dark_grey;
+    background-image: url("./../../images/apps-section-circle.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: calc(50% + 220px) calc(50% + 70px);
+  }
+
+  &__container{
+    padding: 102px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container-head{
+    max-width: 415px;
+    width: 100%;
+  }
+
+  &__container-title{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $white;
+  }
+
+  &__wrapper{
+    display: flex;
+    gap: 18px;
+  }
+
+  &__wrapper-app{
+    padding: 8px 20px;
+    border-radius: 4px;
+    display: flex;
+    background-color: $light_grey;
+    align-items: center;
+  }
+
+  &__appstore-img{
+    width: 24px;
+    height: 28px;
+    margin-right: 12px;
+  }
+
+  &__box-text{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: $dark_grey;
+  }
+
+  &__box-title{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: $dark_grey;
+  }
+}

@@ -1,0 +1,52 @@
+.footer{
+  .container-big{
+    background-color: $very_dark_grey;
+    padding: 33px 0;
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 58px;
+  }
+
+  &__list{
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item-link{
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dimgrey;
+
+    &:hover{
+      color: $orange;
+    }
+  }
+
+  &__icon-list{
+    display: flex;
+    gap: 24px;
+  }
+
+
+
+  svg {
+    &:hover{
+      fill: $light_grey;
+
+    }
+  }
+
+}
