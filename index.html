@@ -8,10 +8,33 @@
   <title>Template site</title>
 </head>
 <body>
+  <h1 class="visually-hidden">Scoot site</h1>
   <!-- HEADER START -->
   <header class="header">
     <div class="container">
-      <h2 class="header__title">Hello user! This template is for used</h2>
+      <div class="header__container">
+        <div class="header__menu">
+          <a href="./index.html" class="header__logo-link">
+            <img src="./images/site-logo.svg" alt="Site logo" class="header__logo-img">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__item-link">About</a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__item-link">Location</a>
+              </li>
+
+              <li class="header__item">
+                <a href="#" class="header__item-link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="button">Get Scootin</button>
+      </div>
     </div>
   </header>
   <!-- HEADER END -->
@@ -20,11 +43,36 @@
   <main>
     <!-- hero-section start -->
     <section class="hero">
-      <div class="container">
-
+      <div class="container-big">
+        <div class="container hero__inner-wrapper">
+          <div class="hero__container">
+            <div class="hero__wrapper">
+              <h2 class="hero__wrapper-title">Scooter sharing made simple</h2>
+              <p class="hero__wrapper-text">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+              <a href="#" class="button hero__btn">Get Scootin</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- hero-section end -->
+
+    <section class="services">
+      <h2 class="visually-hidden">Our services</h2>
+      <div class="container">
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__item-top"></div>
+            <div class="services__item-bottom">
+              <h3 class="services__item-title">Locate with app</h3>
+              <p class="services__item-text">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
   </main>
   <!-- MAIN END -->
 

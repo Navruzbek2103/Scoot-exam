@@ -1,14 +1,48 @@
-header{
-  width: 100%;
-  height: 400px;
-  background-color: $orange;
-  h2.header__title{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-top: 100px;
-    color: $aqua;
-    text-shadow: 0 0 4px black;
-    font-size: $f-size1;
+.header{
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
   }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 58px;
+  }
+
+  &__list{
+    display: flex;
+    // justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__item-link{
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dimgrey;
+
+    &:hover{
+      color: $orange
+    }
+
+  }
+}
+.button{
+  @include button;
+}
+
+.button:hover{
+  @include button-hover;
+}
+
+.button:active{
+  @include button-active;
 }

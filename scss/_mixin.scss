@@ -1,0 +1,27 @@
+@mixin button {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: $white;
+  background-color: $orange;
+  border: none;
+  cursor: pointer;
+  padding: 14px 39px;
+  border: 3px solid transparent;
+  text-decoration: none;
+}
+
+@mixin button-hover {
+  color: $orange;
+  background-color: $white;
+  border: 3px solid $orange;
+}
+
+@mixin button-active {
+  color: $orange;
+  background-color: $light_grey;
+  border: 3px solid $orange;
+}
