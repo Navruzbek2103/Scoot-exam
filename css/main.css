@@ -669,7 +669,7 @@ ul, ol {
   }
 }
 
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 662px) {
   .hero {
     border: 1px solid orange;
   }
@@ -677,7 +677,7 @@ ul, ol {
     background-size: cover;
   }
   .hero__container {
-    padding: 150px 0;
+    padding: 90px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -703,7 +703,9 @@ ul, ol {
     display: none;
   }
   .hero__btn {
-    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -779,7 +781,7 @@ ul, ol {
 }
 
 .services__item-bottom {
-  max-width: 350px;
+  max-width: 330px;
   width: 100%;
 }
 
@@ -799,6 +801,105 @@ ul, ol {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+
+@media only screen and (max-width: 1000px) {
+  .services {
+    margin-bottom: 180px;
+    background-color: aqua;
+  }
+  .services .container {
+    max-width: 700px;
+    border: 1px solid red;
+  }
+  .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__item {
+    max-width: 580px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 40px;
+  }
+  .services__item:last-child .services__item-top::before {
+    display: none;
+  }
+  .services__item-top {
+    position: relative;
+    width: 100%;
+    margin-bottom: 87px;
+  }
+  .services__item-top::before {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    right: 80%;
+    display: inline-block;
+    width: 15px;
+    height: 370px;
+    background-color: #E5ECF4;
+  }
+  .services__item-top::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    background-color: #FCB72B;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .services__item:first-child .services__item-top::before {
+    max-width: 165px;
+  }
+  .services__item:nth-child(1) .services__item-top::after {
+    background-image: url("./../../images/locate-app.svg");
+  }
+  .services__item:nth-child(2) .services__item-top::after {
+    background-image: url("./../../images/scooter.svg");
+  }
+  .services__item:nth-child(3) .services__item-top::after {
+    background-image: url("./../../images/speed-scooter.svg");
+  }
+  .services__item-bottom {
+    border: 1px solid red;
+    max-width: 530px;
+    width: 100%;
+  }
+  .services__item-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+    margin-bottom: 27px;
+  }
+  .services__item-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
 }
 
 .telemetry {

@@ -62,7 +62,7 @@
   }
 
   &__item-bottom{
-    max-width: 350px;
+    max-width: 330px;
     width: 100%;
   }
 
@@ -83,4 +83,108 @@
     line-height: 25px;
     color: $dimgrey;
   }
+}
+
+@media only screen and (max-width: 1000px){
+  .services{
+    margin-bottom: 180px;
+    background-color: aqua;
+
+    .container{
+      max-width: 700px;
+      border: 1px solid red;
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item{
+
+      max-width: 580px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 40px;
+    }
+
+    &__item:last-child &__item-top::before{
+      display: none;
+    }
+
+    &__item-top{
+      position: relative;
+      width: 100%;
+      margin-bottom: 87px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: -120px;
+        right: 80%;
+        display: inline-block;
+        width: 15px;
+        height: 370px;
+        background-color: $light_grey;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 96px;
+        height: 96px;
+        background-color: $orange;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    }
+
+    &__item:first-child  &__item-top::before{
+      max-width: 165px;
+    }
+
+    &__item:nth-child(1) &__item-top::after{
+      background-image: url("./../../images/locate-app.svg");
+    }
+
+    &__item:nth-child(2) &__item-top::after{
+      background-image: url("./../../images/scooter.svg");
+    }
+
+    &__item:nth-child(3) &__item-top::after{
+      background-image: url("./../../images/speed-scooter.svg");
+    }
+
+    &__item-bottom{
+      border: 1px solid red;
+      max-width: 530px;
+      width: 100%;
+    }
+
+    &__item-title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: $dark_grey;
+      margin-bottom: 27px;
+    }
+
+    &__item-text{
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $dimgrey;
+    }
+  }
+
 }
