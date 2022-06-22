@@ -46,3 +46,21 @@
 .button:active{
   @include button-active;
 }
+
+@media only screen and (max-width: 660px){
+  .header{
+    background-color: aqua;
+
+    &__menu{
+      margin: 0 auto;
+    }
+
+    &__nav{
+      display: none;
+    }
+
+  }
+  .button{
+    display: none;
+  }
+}
